@@ -19,3 +19,28 @@ To run this project locally:
    ```sh
    git clone https://github.com/yourusername/browser-video-recorder.git
    cd browser-video-recorder
+   
+2. **Open index.html in a Browser**
+   No extra setup is required. Just open the file and start recording!
+   
+**📌 Usage**
+   1. Click "Start Recording" to begin capturing video.
+   2. Click "Capture Screenshot" anytime during recording.
+   3. Click "Stop Recording" to finish.
+   4. Download the video and screenshots automatically.
+      
+**🏗️ Technologies Used**
+   . HTML5
+   . CSS3
+   . JavaScript (MediaRecorder API, Canvas API)
+
+📷 Screenshots
+(Add screenshots of your UI if available)
+
+🔮 Future Improvements
+ Add screen recording option.
+ Implement cloud storage for saving videos.
+ Support multiple video formats.
+ 
+**🤝 Contributing**
+   Feel free to fork this repo and submit pull requests!
