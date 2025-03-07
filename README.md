@@ -22,7 +22,7 @@ To run this project locally:
    
 2. **Open index.html in a Browser**
    No extra setup is required. Just open the file and start recording!
-   
+##  
 **📌 Usage**
    1. Click "Start Recording" to begin capturing video.
    2. Click "Capture Screenshot" anytime during recording.
@@ -34,10 +34,8 @@ To run this project locally:
    . CSS3
    . JavaScript (MediaRecorder API, Canvas API)
 
-📷 Screenshots
-(Add screenshots of your UI if available)
 
-🔮 Future Improvements
+**🔮 Future Improvements**
  Add screen recording option.
  Implement cloud storage for saving videos.
  Support multiple video formats.
