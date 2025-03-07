@@ -36,9 +36,9 @@ To run this project locally:
 
 
 **🔮 Future Improvements**
- Add screen recording option.
- Implement cloud storage for saving videos.
- Support multiple video formats.
+    Add screen recording option.
+    Implement cloud storage for saving videos.
+    Support multiple video formats.
  
 **🤝 Contributing**
-   Feel free to fork this repo and submit pull requests!
+    Feel free to fork this repo and submit pull requests!
