@@ -3,28 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Loom</title>
+    <title>VideoRecorder</title>
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
     <div class="vid_container">
-
-      <video  disablepictureinpicture autoplay controlslist="nofullscreen" src="/" class="video"></video>
-    </div>
-    <div class="actions-cont">
-      <div class="record-cont">
-        <div class="record-btn" id="record-btn"></div>
+      <div class="vid-panel">
+        <div class="filters-cont">
+          <p class="filters-title">Filters</p>
+        </div>
+        <video
+          disablepictureinpicture
+          autoplay
+          controlslist="nofullscreen"
+          src="/"
+          class="video"
+        ></video>
       </div>
-      <div class="capture-cont">
-        <div class="capture-btn "></div>
+      <div class="recorder-features">
+        <div class="timer-cont">
+          <div class="timer">00:00:00</div>
+        </div>
+        <div class="actions-cont">
+          <div class="record-cont">
+            <div class="record-btn" id="record-btn"></div>
+          </div>
+          <div class="capture-cont">
+            <div class="capture-btn"></div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="timer-cont">
-      <div class="timer">00:00:00</div>
-    </div>
-    </div>
-    
-    
 
     <script src="/index.js"></script>
   </body>

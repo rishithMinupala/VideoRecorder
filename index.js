@@ -3,6 +3,7 @@ let recodrCont = document.querySelector(".record-cont");
 let recodrBtn = document.getElementById("record-btn");
 let captureCont = document.querySelector(".capture-cont");
 let captureBtn = document.querySelector(".capture-btn");
+let filtersCont = document.querySelector(".filters-cont");
 let timer = document.querySelector(".timer");
 
 let recorder;
@@ -12,14 +13,11 @@ let timerId;
 let secondsCounter = 0;
 
 const userData = {
-  video: true,
+  //video: { frameRate: { ideal: 60 } },
   audio: false,
 };
 
-const displayData = {
-  video: true,
-  audio: true,
-};
+
 
 //timer function
 const counter = () => {
@@ -76,11 +74,15 @@ const getVideo = async () => {
     if (isRecording) {
       recorder.start();
       startTimer();
+      recodrBtn.classList.remove("record-btn");
+      recodrBtn.classList.add("recording-btn");
       recodrBtn.classList.add("scale-record");
     } else {
       recorder.stop();
       stopTimer();
       recodrBtn.classList.remove("scale-record");
+      recodrBtn.classList.remove("recording-btn");
+      recodrBtn.classList.add("record-btn");
     }
   };
 };

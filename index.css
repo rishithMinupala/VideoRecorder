@@ -9,66 +9,115 @@ body {
 .vid_container {
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: rgb(40, 40, 40);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
 
+.vid-panel {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 85%;
+}
+
+.filters-cont {
+  min-width: 200px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-right: 3px;
+  border-radius: 15px;
+}
+
+.filters-title {
+  
 }
 
 .video {
   height: 100%;
-  width: 100%;
-  object-fit: contain;
+  width: calc(100% - 210px);
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-left: 3px;
+}
+
+.recorder-features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 3px;
 }
 
 .actions-cont {
   display: flex;
-  position: absolute;
-  width: 12rem;
-  height: 4rem;
-  left: calc((100vw - 12rem) / 2);
-  bottom: 3rem;
+
+  width: 9rem;
+  height: 3rem;
+
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-    cursor: pointer;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 4px;
 }
 
-.actions-cont > * {
+.record-cont {
   border-radius: 50%;
-  border-width: 3px;
+  animation: fill-border 60s linear forwards;
+  border: 2px solid white;
+  height: 2.25rem;
+  width: 2.25rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.capture-cont {
+  border-radius: 50%;
+  border-width: 2px;
   border-color: white;
-  height: 100%;
-  width: 4rem;
+  height: 2.25rem;
+  width: 2.25rem;
   border-style: solid;
   justify-content: center;
   display: flex;
   align-items: center;
-    cursor: pointer;
-}
-.record-cont {
-  cursor: pointer;
-  
-}
-
-.capture-cont {
   cursor: pointer;
 }
 
 .record-btn {
-  background-color: red;
+  background-color: rgb(245, 32, 32);
   border-radius: 50%;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  cursor: pointer;
+}
+
+.recording-btn {
+  background-color: rgb(245, 32, 32);
+  border-radius: 20%;
+  height: 1.25rem;
+  width: 1.25rem;
   cursor: pointer;
 }
 
 .capture-btn {
   background-color: whitesmoke;
   border-radius: 50%;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 1.75rem;
+  width: 1.75rem;
   cursor: pointer;
 }
 
@@ -83,7 +132,7 @@ body {
     transform: scale(0.7);
   }
   100% {
-    transform: scale(1.3);
+    transform: scale(1);
   }
 }
 
@@ -99,21 +148,17 @@ body {
   }
 
   100% {
-    transform: scale(1.2);
+    transform: scale(1);
   }
 }
-
 .timer-cont {
-  height: 5rem;
-  width: 5rem;
-  position: absolute;
-  bottom: 4rem;
-  color: rgb(221, 16, 16);
-  font-size: 20px;
-  font-weight: 600;
-  left: calc((100vw - 4rem) / 2);
+  height: 22px;
 }
-
 .timer {
+  color: rgb(236, 226, 226);
+  font-size: 20px;
+  font-weight: 500;
   display: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
