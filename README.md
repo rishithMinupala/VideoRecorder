@@ -1,16 +1,17 @@
 
 # 📹 Browser Video Recorder  
 
-A simple web-based video recorder that allows users to **record videos**, **capture screenshots**, and **download recorded videos** directly from their browser.  
+A simple web-based video recorder that allows users to **record videos**,**apply filters**,  **capture screenshots**, and **download recorded videos** directly from their browser.  
 
 ## ✨ Features  
 - 🎥 **Record Video** using the browser's media API.  
-- 📸 **Capture Screenshots** while recording.  
+- 📸 **Capture Screenshots** while recording.
+- 🌃 **Apply Filters** to the video.
 - 💾 **Download** the recorded video and screenshots.  
 - 🛠️ **Lightweight & Fast** – No external dependencies required.  
 
 ## 🚀 Live Demo  
-[🔗 Click Here to Try](#) *(Add your hosted link if available)*  
+[🔗 Click Here to Try](https://lumerec.ccbp.tech/) 
 
 ## 🛠️ Installation & Setup  
 To run this project locally:  
