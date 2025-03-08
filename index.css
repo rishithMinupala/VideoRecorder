@@ -25,28 +25,112 @@ body {
 
 .filters-cont {
   min-width: 200px;
+  max-width: 230px;
   border: 2px solid white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   padding: 10px;
   margin-right: 3px;
   border-radius: 15px;
+  row-gap: 4px;
 }
 
 .filters-title {
-  
+  color: rgb(247, 148, 148);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0px;
+}
+
+.filter-box {
+  overflow-y: scroll;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.filter-box::-webkit-scrollbar {
+  display: none;
+}
+.filter {
+  width: 100%;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.filter-video {
+  width: 100%;
+
+  border-radius: 8px;
+  height: 100px;
+  box-shadow: inset;
+  object-fit: cover;
+}
+.selected {
+  border-color: blue;
+}
+
+.filter-1 {
+  filter: none;
+}
+.filter-2 {
+  filter: grayscale(100%);
+}
+.filter-3 {
+  filter: sepia(100%);
+}
+.filter-4 {
+  filter: invert(100%);
+}
+.filter-5 {
+  filter: brightness(150%);
+}
+.filter-6 {
+  filter: contrast(200%);
+}
+.filter-7 {
+  filter: saturate(200%);
+}
+.filter-8 {
+  filter: hue-rotate(90deg);
+}
+.filter-9 {
+  filter: blur(3px);
+}
+.filter-10 {
+  filter: opacity(50%);
+}
+.filter-11 {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+.filter-name {
+  margin: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(236, 226, 226);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.video-cont {
+  height: 100%;
+  width: calc(100% - 210px);
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-left: 3px;
+  background-color: transparent;
 }
 
 .video {
   height: 100%;
-  width: calc(100% - 210px);
+  width: 100%;
   object-fit: cover;
   border-radius: 10px;
-  border: 2px solid white;
-  margin-left: 3px;
 }
 
 .recorder-features {
